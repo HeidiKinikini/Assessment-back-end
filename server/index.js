@@ -7,8 +7,10 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getCompliment } = require('./controller')
+const { getCompliment, submitAnimal } = require('./controller')
 
 app.get("/api/compliment", getCompliment);
+
+app.post("/api/submit-animal", submitAnimal)
 
 app.listen(4000, () => console.log("Server running on 4000"));
