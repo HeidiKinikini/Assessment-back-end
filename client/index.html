@@ -5,12 +5,25 @@
   </head>
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
+    <h1>Super ZooKeeper</h1>
     <form id="animal-form">
-      <input placeholder="Type in animal"/>
-      <input placeholder="Type in animal power"/>
+      <h2>Get an animal</h2>
+      <input id="a-name" type="text" placeholder="Type in animal"/>
+      <input id="a-power" type="number" placeholder="Type in animal power"/>
       <button type="submit" id="submit">Submit</button>
     </form>
- 
+    <form id="put-form">
+      <h2>Update an animals power</h2>
+      <input id="update-name-input" type="text" placeholder="Enter a name"/>
+      <input id="update-power-input" type="number" placeholder="Enter new power">
+      <button id="powerSubmit" type="submit">Submit</button>
+    </form>
+    <form id="delete-form">
+      <h2>Delete an animal</h2>
+      <input id="delete-animal-input" type="text" placeholder="Enter animal">
+      <button id="delete-button" type="submit">delete</button>
+    </form>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
     
